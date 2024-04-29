@@ -1,4 +1,4 @@
-import 'package:codemicros_getx_series/app/views/homepage_view.dart';
+import 'package:codemicros_getx_series/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 
@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const HomepageView(),
+      initialRoute: AppPages.initial,
+      getPages: AppPages.routes,
     );
   }
 }
